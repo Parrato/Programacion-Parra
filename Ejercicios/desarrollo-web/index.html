@@ -1,46 +1,239 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mantenimiento para tu Web</title>
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page para tu negocio</title>
 
-    <body>
-        <h1>Mantenimiento web: Mantenemos tu sitio web rápido y seguro</h1>
-        <p>Si tu sitio web está lento, no se carga correctamente o simplemente quieres asegurarte de que todo esté funcionando sin problemas, ¡estamos aquí para ayudarte!</p>
-        <p>Nuestro equipo de expertos en mantenimiento web se encargará de:</p>
-        <ul>
-            <li><strong>Actualizar tu sitio web</strong> con las últimas versiones de software y plugins.</li>
-            <li><strong>Optimizar el rendimiento</strong> para que tu sitio cargue más rápido.</li>
-            <li><strong>Realizar copias de seguridad</strong> regulares para proteger tus datos.</li>
-            <li><strong>Monitorear la seguridad</strong> para prevenir ataques y vulnerabilidades.</li>
-            <li><strong>Resolver cualquier problema técnico</strong> que pueda surgir.</li>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #050005;
+            color: rgb(196, 194, 166);
+        }
+
+        .container {
+            border-radius: 30px;
+            max-width: 900px;
+            margin: 15px auto;
+            padding: 30px;
+            background-color: #3836367a;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.993);
+        }
+
+        .mensaje-principal,
+        .creativity-msj {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        h1 {
+            color: goldenrod;
+            text-align: center;
+            text-shadow: 2px 7px 17px rgba(0, 0, 0, 0.856);
+            margin-top: 0px;
+        }
+
+        h2 {
+            color: gold;
+            text-align: center;
+            text-shadow: 2px 7px 17px rgba(0, 0, 0, 0.856);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #c4b071;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            margin-left: 18px;
+            padding-left: 18px;
+            line-height: 1.6;
+        }
+
+        .first-list {
+            list-style: none;
+            text-align: center;
+            margin-left: 0px;
+            padding-left: 0px;
+            font-size: 18px;
+            text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.438);
+        }
+
+        .second-list {
+            font-size: 18px;
+            text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.438);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .hero {
+            text-align: center;
+            padding-bottom: 10px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bloque {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.04);
+        border-radius: 18px;
+        border: 1px solid rgba(196, 176, 113, 0.18);
+        }
+
+        .bloque h2 {  
+        margin-top: 0px;
+        }
+
+        .bloque p {
+        margin-bottom: 16px;
+        }
+
+        .bloque-contacto li {
+        margin-bottom: 14px;
+}
+
+        .bloque-contacto ul {
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: center;
+        list-style: none;
+    }
+
+        .texto-limitado {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .lista-limitada {
+            max-width: 650;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+
+        .cta {
+        display: inline-block;
+        padding: 8px 14px;
+        background-color: rgba(196, 176, 113, 0.15);
+        border: 1px solid rgba(196, 176, 113, 0.4);
+        border-radius: 10px;
+        text-decoration: none;
+        }
+
+        .cta:hover {
+        background-color: rgba(196, 176, 113, 0.3);
+        text-decoration: none;
+    }
+
+        .tlfn-link {
+            opacity: 0.7;
+        }
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 25px;    
+                border-radius: 0px;   
+                margin: 0;      
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p,
+            li,
+            .mensaje-principal,
+            .creativity-msj {
+                font-size: 16px;
+            }
+
+            ul,
+            ol {
+                margin-left: 15px;
+                padding-left: 15px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+        <h1>Desarrollo y Mantenimiento Web</h1>
+
+        <p class="mensaje-principal">
+            <em>Creamos y mantenemos páginas web simples para que tu negocio tenga una presencia clara en internet.</em>
+        </p>
+
+        </section>
+
+        <section class="bloque">
+        <h2>¿Qué ofrecemos?</h2>
+        <p>
+            Ofrecemos servicios de desarrollo y mantenimiento web para ayudar a pequeños negocios y proyectos personales a tener una página funcional y fácil de usar.
+        </p>
+
+        <ul class="first-list">
+            <li><strong>Desarrollo</strong> de sitios web personalizados</li>
+            <li><strong>Mantenimiento y actualización</strong> de sitios web existentes</li>
+            <li><strong>Optimización</strong> del rendimiento y seguridad</li>
         </ul>
-        
-        <h2>¿Cómo trabajamos?</h2>
-        <p>Nuestro proceso de trabajo es <em>simple y eficiente</em>:</p>
-        <ol>
-            <li>Análisis de tu sitio web</li>
-            <li>Implementación de mejoras</li>
-            <li>Pruebas y optimización</li>
-            <li>Entrega y seguimiento</li>
+
+        </section>
+
+        <section class="bloque">
+
+        <h2>Cómo trabajamos</h2>
+        <p>
+            Seguimos un proceso simple para organizar tu página, hacer ajustes útiles y entregarte una versión clara y funcional.
+        </p>
+
+        <ol class="second-list lista-limitada">
+            <li><strong>Analizamos las necesidades</strong> de tu negocio para organizar mejor la página.</li>
+            <li><strong>Mantenemos una comunicación constante</strong> para ajustar el contenido y la estructura.</li>
+            <li><strong>Entregamos una versión funcional</strong> y revisamos los detalles principales.</li>
         </ol>
-        <img src="https://via.placeholder.com/400x200" alt="Proceso de trabajo">
+        </section>
 
-        <hr>
-        <h2>¿Cómo contactarnos?</h2>
+        <section class="bloque-contacto">
+
+        <h2>Contáctanos</h2>
+        <p class="creativity-msj texto-limitado">
+            <em>Si necesitas una página simple para tu negocio o quieres mejorar una existente, ponte en contacto.</em>
+        </p>
+
         <ul>
-            <li><a href="mailto:mantenimientosweb@gmail.com">Correo electrónico:</a></li>
-            <li><a href="tel:+1234567890">Teléfono: +1 234 567 890</a></li>
+            <li><a href="mailto:info@tunegocio.com" class="cta">Envíanos por correo</a></li>
+            <li><a href="tel:1234567809" class="tlfn-link">Llámanos: +1 234567809</a></li>
         </ul>
-        
-
-    </body>
 
 
-
-
-
-
-
-
+        </section>
+    </div>
+</body>
 </html>
