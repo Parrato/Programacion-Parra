@@ -13,8 +13,8 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #050005;
-            color: rgb(196, 194, 166);
+            background-color: #0B1120;
+            color: #A8B3C7;
         }
 
         .container {
@@ -22,27 +22,28 @@
             max-width: 900px;
             margin: 15px auto;
             padding: 30px;
-            background-color: #3836367a;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.993);
+            background-color: #111827;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.45);
         }
 
         .mensaje-principal,
-        .creativity-msj {
+        .mensaje-contacto {
             font-size: 17px;
             text-align: center;
+            color: #A8B3C7;
         }
 
         h1 {
-            color: goldenrod;
+            color: #E5EEF8;
             text-align: center;
-            text-shadow: 2px 7px 17px rgba(0, 0, 0, 0.856);
+            text-shadow: 2px 7px 17px rgba(0, 0, 0, 0.45);
             margin-top: 0px;
         }
 
         h2 {
-            color: gold;
+            color: #C7D7EA;
             text-align: center;
-            text-shadow: 2px 7px 17px rgba(0, 0, 0, 0.856);
+            text-shadow: 2px 7px 17px rgba(0, 0, 0, 0.35);
         }
 
         p {
@@ -52,11 +53,12 @@
         }
 
         a {
-            color: #c4b071;
+            color: #60A5FA;
             text-decoration: none;
         }
 
         a:hover {
+            color: #93C5FD;
             text-decoration: underline;
         }
 
@@ -67,18 +69,46 @@
             line-height: 1.6;
         }
 
-        .first-list {
-            list-style: none;
-            text-align: center;
-            margin-left: 0px;
-            padding-left: 0px;
-            font-size: 18px;
-            text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.438);
+        h3 {
+            color: #c7d7eae8;
+            text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.409);
         }
 
-        .second-list {
-            font-size: 18px;
-            text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.438);
+
+        .hero-texto-franja { 
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-style: italic;
+            color: #c7d7eae8
+        }
+        .hero-lista {
+            flex: 1;     
+            margin-left: auto;
+            margin-right: auto;
+            max-width: none;
+            margin: 0; 
+            text-align: center;
+            text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);;
+        }
+
+        .servicios-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .tarjeta-servicio {
+            background-color: #1A2333;
+            border-radius: 18px;
+            border: 1px solid #2B3A55;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.267);
+            padding: 20px;
+            flex: 1;         
+        }
+
+        .lista-proceso {
+            font-size: 18px;    
+            text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
         }
 
         li {
@@ -90,65 +120,84 @@
             padding-bottom: 10px;
             max-width: 650px;
             margin-left: auto;
-            margin-right: auto;
-        }
+            margin-right: auto; 
+            }
 
         .bloque {
-        margin-bottom: 30px;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.04);
-        border-radius: 18px;
-        border: 1px solid rgba(196, 176, 113, 0.18);
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #1A2333;
+            border-radius: 18px;
+            border: 1px solid #2B3A55;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.267);
         }
 
         .bloque h2 {  
-        margin-top: 0px;
+            margin-top: 5px;
         }
 
         .bloque p {
-        margin-bottom: 16px;
+            margin-bottom: 16px;
         }
 
-        .bloque-contacto li {
-        margin-bottom: 14px;
-}
+        .bloque-contacto {
+            border-top: 1px solid #2B3A55;
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
 
-        .bloque-contacto ul {
-        padding-left: 0px;
-        margin-left: 0px;
-        text-align: center;
-        list-style: none;
-    }
+        .bloque-contacto-texto {
+            margin-bottom: 0px;
+            margin-top: 30px; 
+        }
+        
+        .bloque-contacto-texto, .bloque-contacto-interacciones {
+            flex: 1;
+        }
 
-        .texto-limitado {
-        max-width: 650px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        .bloque-contacto-interacciones ul {
+            padding-left: 0px;
+            margin-left: 0px;
+            text-align: center;
+            list-style: none;
+            margin-bottom: 0px;
+        }
 
         .lista-limitada {
-            max-width: 650;
+            max-width: 650px;
             margin-left: auto;
             margin-right: auto;
         } 
 
         .cta {
-        display: inline-block;
-        padding: 8px 14px;
-        background-color: rgba(196, 176, 113, 0.15);
-        border: 1px solid rgba(196, 176, 113, 0.4);
-        border-radius: 10px;
-        text-decoration: none;
+            display: inline-block;
+            padding: 8px 14px;
+            background-color: #5490da;
+            border: 1px solid #2563EB;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #E5EEF8;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .cta:hover {
-        background-color: rgba(196, 176, 113, 0.3);
-        text-decoration: none;
-    }
+            background-color: #2563EB;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
 
         .tlfn-link {
-            opacity: 0.7;
+            opacity: 0.9;
+            color: #93C5FD;
         }
+
         @media (max-width: 600px) {
 
             .container {
@@ -168,7 +217,7 @@
             p,
             li,
             .mensaje-principal,
-            .creativity-msj {
+            .mensaje-contacto {
                 font-size: 16px;
             }
 
@@ -178,61 +227,96 @@
                 padding-left: 15px;
             }
 
+            .servicios-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .bloque-contacto {
+                flex-direction: column;
+                gap: 0px;
+            }
+            .hero-texto-franja {
+                flex-direction: row;
+                gap: 0px;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <section class="hero">
-        <h1>Desarrollo y Mantenimiento Web</h1>
+                <h1>Diseñamos páginas web claras, funcionales y profesionales</h1>
+            <p class="mensaje-principal">
+                <em>Ayudamos a pequeños negocios y proyectos personales a mostrar sus servicios con una página clara, útil y fácil de actualizar</em>
+            </p>
+            <div class="hero-texto-franja">
+                <article class="hero-lista">
+                <p><span class="emoji">✔️</span> Diseño claro y moderno</p>
+                </article>
 
-        <p class="mensaje-principal">
-            <em>Creamos y mantenemos páginas web simples para que tu negocio tenga una presencia clara en internet.</em>
-        </p>
+                <article class="hero-lista">
+                <p><span class="emoji">✔️</span> Resultados optimizados</p>
+                </article>
 
+                <article class="hero-lista">
+                <p><span class="emoji">✔️</span> Experiencia intuitiva</p>
+                </article>
+            </div>
         </section>
 
         <section class="bloque">
-        <h2>¿Qué ofrecemos?</h2>
-        <p>
-            Ofrecemos servicios de desarrollo y mantenimiento web para ayudar a pequeños negocios y proyectos personales a tener una página funcional y fácil de usar.
-        </p>
+            <h2>¿Qué ofrecemos?</h2>
+            <p>
+                Ofrecemos servicios de desarrollo y mantenimiento web para ayudar a pequeños negocios y proyectos personales a tener una página funcional y fácil de usar.
+            </p>
+                <div class="servicios-grid">
+                    
+                    <article class="tarjeta-servicio">
+                    <h3>Desarrollo</h3>
+                    <p>Creación de páginas web simples, claras y adaptadas a las necesidades de tu negocio.</p>
+                    </article>
 
-        <ul class="first-list">
-            <li><strong>Desarrollo</strong> de sitios web personalizados</li>
-            <li><strong>Mantenimiento y actualización</strong> de sitios web existentes</li>
-            <li><strong>Optimización</strong> del rendimiento y seguridad</li>
-        </ul>
+                    <article class="tarjeta-servicio">
+                    <h3>Mantenimiento</h3>
+                    <p>Actualización de contenido, ajustes visuales y correcciones básicas en sitios existentes.</p>
+                    </article>
 
+                    <article class="tarjeta-servicio">
+                    <h3>Mejoras</h3>
+                    <p>Optimización básica de estructura, contenido y rendimiento para una mejor experiencia.</p>
+                    </article>
+                    
+                </div>
         </section>
 
         <section class="bloque">
+            <h2>Cómo trabajamos</h2>
+            <p>
+                Seguimos un proceso simple para organizar tu página, hacer ajustes útiles y entregarte una versión clara y funcional.
+            </p>
 
-        <h2>Cómo trabajamos</h2>
-        <p>
-            Seguimos un proceso simple para organizar tu página, hacer ajustes útiles y entregarte una versión clara y funcional.
-        </p>
-
-        <ol class="second-list lista-limitada">
-            <li><strong>Analizamos las necesidades</strong> de tu negocio para organizar mejor la página.</li>
-            <li><strong>Mantenemos una comunicación constante</strong> para ajustar el contenido y la estructura.</li>
-            <li><strong>Entregamos una versión funcional</strong> y revisamos los detalles principales.</li>
-        </ol>
+            <ol class="lista-proceso lista-limitada">
+                <li><strong>Analizamos las necesidades</strong> de tu negocio para organizar mejor la página.</li>
+                <li><strong>Mantenemos una comunicación constante</strong> para ajustar el contenido y la estructura.</li>
+                <li><strong>Entregamos una versión funcional</strong> y revisamos los detalles principales.</li>
+            </ol>
         </section>
 
         <section class="bloque-contacto">
+            <div class="bloque-contacto-texto">
+                <h2>Solicita información</h2>
+                <p class="mensaje-contacto">
+                    <em>Si necesitas una página simple para tu negocio o quieres mejorar una existente, ponte en contacto.</em>
+                </p>
+            </div>
 
-        <h2>Contáctanos</h2>
-        <p class="creativity-msj texto-limitado">
-            <em>Si necesitas una página simple para tu negocio o quieres mejorar una existente, ponte en contacto.</em>
-        </p>
-
-        <ul>
-            <li><a href="mailto:info@tunegocio.com" class="cta">Envíanos por correo</a></li>
-            <li><a href="tel:1234567809" class="tlfn-link">Llámanos: +1 234567809</a></li>
-        </ul>
-
-
+            <div class="bloque-contacto-interacciones">
+                <ul>
+                    <li><a href="mailto:info@tunegocio.com" class="cta">Envíanos por correo</a></li>
+                    <li><a href="tel:1234567809" class="tlfn-link">Llámanos: +1 234567809</a></li>
+                </ul>
+            </div>
         </section>
     </div>
 </body>
